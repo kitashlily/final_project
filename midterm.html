@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+#arrow {
+        position: absolute;
+        top: 84%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 65px;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
+        animation: arrow 0.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes arrow {
+        from {
+          transform: translate(280%, 50%) rotate(0deg);
+        }
+        to {
+          transform: translate(350%, 30%) rotate(10deg);
+        }
+      }
+</style>
+<body>
+
+<h2>BOHOL MAP</h2>
+<p>Click Valencia:</p>
+<div id="arrow"></div>
+
+<img src="https://ppdo.bohol.gov.ph/wp-content/uploads/wppa/267.jpg" alt="boholmap" usemap="#boholmap" width="1400" height="679">
+
+
+<map name="boholmap">
+  <area shape="circle" coords="600,497,80" href="valencia.html">
+
+</map>
+
+</body>
+</html>
